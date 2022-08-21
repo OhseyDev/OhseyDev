@@ -1,0 +1,17 @@
+article {
+    display:inline-block;
+}
+
+article.listing {
+    min-width: 200px;
+    max-width: 250px;
+    padding: none;
+    background: inherit;
+}
+
+article.listing a{text-decoration:none;display:block}
+article.listing div{margin:0 .2em;padding-top:none}
+article.listing img{width:100%;padding:none}
+article.listing div h1{font-size:1.6em}
+article.listing:hover{transform:scale(1.1);cursor:pointer}
+article.listing:hover a{filter:none}
