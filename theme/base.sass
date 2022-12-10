@@ -4,6 +4,22 @@
     transition: .2s
     color: #333333
     font-family: Verdana, sans-serif
+
 body
     padding: none
     overflow-x: hidden
+    display: grid
+    grid-template-columns: fit-content(min(20%, 64pt)) 1fr
+    grid-template-rows: 
+
+@mixin screen-min($min)
+    @media (min-width: $min)
+        @content
+
+@mixin screen-max($max)
+    @media (max-width: $max - 1)
+        @content
+
+@mixin screen-minmax($min, $max)
+    @media (min-width: $min) and (max-width: $max - 1)
+        @content
