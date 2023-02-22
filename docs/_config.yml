@@ -1,6 +1,6 @@
-remote_theme: OhseyDev/devlog-theme
+remote_theme: OhseyDev/blog-theme
 plugins:
   - jekyll-remote-theme
-title: DevLog | Ohsey.me
+title: The Ohsey Project Blog
 description: Keep up to date with Ohsey (@OhseyDev on GitHub) software and technical papers/specs.
 show_downloads: false
