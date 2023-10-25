@@ -7,3 +7,4 @@ timezone: Europe/London
 gist:
   noscript: false
 markdown: GFM
+encoding: UTF-8
