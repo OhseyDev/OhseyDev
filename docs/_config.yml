@@ -1,0 +1,9 @@
+lsi: false
+safe: true
+source: /docs
+incremental: false
+highlighter: rouge
+timezone: Europe/London
+gist:
+  noscript: false
+markdown: GFM
