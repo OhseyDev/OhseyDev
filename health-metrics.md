@@ -2,6 +2,7 @@
 
 ## Heart Rate
 | Age       | Resting(bpm)  | Variability(ms)   |
+|-----------|---------------|-------------------|
 | Under 25  | 40-52         | 150               |
 | Under 35  | 44-50         | 125               |
 | Under 45  | 47-53         | 100               |
