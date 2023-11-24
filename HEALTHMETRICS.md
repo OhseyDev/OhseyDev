@@ -1,5 +1,9 @@
 # Health Metric Targets
 
+## Static Metrics
+### Height -> 173cm
+### Weight -> 70kg
+
 ## Heart Rate
 | Age       | Resting(bpm)  | Variability(ms)   |
 |-----------|---------------|-------------------|
