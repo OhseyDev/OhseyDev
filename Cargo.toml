@@ -1,6 +1,12 @@
 [package]
-name = "Ohsey.me Website"
+name = "ocme"
 version = "0.1.0"
 edition = "2021"
+build = "build.rs"
 
 [dependencies]
+sailfish = "0.8.3"
+
+[build-dependencies]
+sailfish = "0.8.3"
+

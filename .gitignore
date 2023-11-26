@@ -2,3 +2,5 @@
 /docs/_site/
 /target
 FINANCE.md
+.stylua.toml
+lazy-lock.json
