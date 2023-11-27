@@ -10,3 +10,23 @@ sailfish = "0.8.3"
 [build-dependencies]
 sailfish = "0.8.3"
 
+[[bin]]
+name = "ocme-server"
+path = "src/bin/server.rs"
+test = false
+
+[[bin]]
+name = "ocme"
+path = "src/bin/management.rs"
+test = false
+
+[lib]
+name = "ocme-common"
+path = "src/lib.rs"
+test = true
+doctest = true
+bench = true
+doc = true
+proc-macro = false
+harness = false
+
