@@ -1,6 +1,6 @@
-# Health Metric Targets
+# Metric Targets
 
-## Static Metrics
+## Static
 ### Height -> 173cm
 ### Weight -> 70kg
 
@@ -14,3 +14,19 @@
 | Under 65  | 51-56         | 70                |
 | Over 65s  | 52-57         | 55                |
 
+## Allowed Foods
+ - Meat & Poultry
+ - Seafood
+ - Dairy
+ - Fruits
+ - Vegetables
+ - Grains, Nuts & Seeds
+
+## Recovery Activities
+ - Yoga & Pilates
+ - Breathwork
+ - Mindfulness
+ - Visualization
+ - Thermoherapy
+ - Cold Showers
+ - Foam Rolling
