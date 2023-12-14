@@ -5,44 +5,37 @@ edition = "2021"
 build = "build.rs"
 
 [dependencies]
-sailfish = { version = "0.8.3", }
+sailfish = "0.8.3"
 hyper = { version = "1.0.1", features = ["http1", "http2", "server"] }
 tungstenite = { version = "0.21.0" }
 tokio = { version = "1.35.0", features = ["rt-multi-thread", "macros", "net", "sync"] }
-oxide-auth = { version = "0.5.4" }
-quinn = { version = "0.10.2" }
+oxide-auth = "0.5.4"
+oxide-auth-async = "0.1.1"
+quinn = "0.10.2"
+diesel = { version = "2.1.4", features = ["postgres"] }
 serde = "1.0.193"
+dotenvy = { version = "0.15.7" }
 
 [build-dependencies]
 sailfish = "0.8.3"
 
 [[bin]]
 name = "ocme-server"
-path = "src/bin/server.rs"
+path = "src/server.rs"
 test = false
 
 [[bin]]
 name = "ocme"
-path = "src/bin/management.rs"
+path = "src/management.rs"
 test = false
 
 [lib]
-name = "ocme-common"
+name = "ocme_common"
 path = "src/common.rs"
 test = true
 doctest = true
 bench = true
 doc = true
 proc-macro = false
-harness = false
-
-[lib]
-name = "ocme-macros"
-path = "src/macros.rs"
-test = false
-doctest = true
-bench = false
-doc = true
-proc-macro = true
 harness = false
 
