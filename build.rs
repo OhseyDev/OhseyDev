@@ -1,3 +1,5 @@
+extern crate sailfish;
+
 fn main() {
-    println!("Hello, world!");
+
 }

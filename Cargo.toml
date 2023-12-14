@@ -28,7 +28,7 @@ test = false
 
 [lib]
 name = "ocme-common"
-path = "src/lib.rs"
+path = "src/common.rs"
 test = true
 doctest = true
 bench = true
