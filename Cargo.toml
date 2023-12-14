@@ -5,22 +5,21 @@ edition = "2021"
 build = "build.rs"
 
 [dependencies]
-sailfish = { version = "0.8.3", optional = true }
-hyper = { version = "1.0.1", optional = true, features = ["http1", "http2", "server"] }
+sailfish = { version = "0.8.3", }
+hyper = { version = "1.0.1", features = ["http1", "http2", "server"] }
+tungstenite = { version = "0.21.0" }
+tokio = { version = "1.35.0", features = ["rt-multi-thread", "macros", "net", "sync"] }
+oxide-auth = { version = "0.5.4" }
+quinn = { version = "0.10.2" }
 serde = "1.0.193"
 
 [build-dependencies]
 sailfish = "0.8.3"
 
-[features]
-hyper = ["dep:hyper"]
-sailfish = ["dep:sailfish"]
-
 [[bin]]
 name = "ocme-server"
 path = "src/bin/server.rs"
 test = false
-required-features = ["hyper"]
 
 [[bin]]
 name = "ocme"
