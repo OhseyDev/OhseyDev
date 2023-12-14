@@ -5,15 +5,22 @@ edition = "2021"
 build = "build.rs"
 
 [dependencies]
-sailfish = "0.8.3"
+sailfish = { version = "0.8.3", optional = true }
+hyper = { version = "1.0.1", optional = true, features = ["http1", "http2", "server"] }
+serde = "1.0.193"
 
 [build-dependencies]
 sailfish = "0.8.3"
+
+[features]
+hyper = ["dep:hyper"]
+sailfish = ["dep:sailfish"]
 
 [[bin]]
 name = "ocme-server"
 path = "src/bin/server.rs"
 test = false
+required-features = ["hyper"]
 
 [[bin]]
 name = "ocme"
@@ -28,5 +35,15 @@ doctest = true
 bench = true
 doc = true
 proc-macro = false
+harness = false
+
+[lib]
+name = "ocme-macros"
+path = "src/macros.rs"
+test = false
+doctest = true
+bench = false
+doc = true
+proc-macro = true
 harness = false
 
