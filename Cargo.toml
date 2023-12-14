@@ -12,12 +12,13 @@ tokio = { version = "1.35.0", features = ["rt-multi-thread", "macros", "net", "s
 oxide-auth = "0.5.4"
 oxide-auth-async = "0.1.1"
 quinn = "0.10.2"
-diesel = { version = "2.1.4", features = ["postgres"] }
+postgres = "0.19.7"
 serde = "1.0.193"
 dotenvy = { version = "0.15.7" }
 
 [build-dependencies]
 sailfish = "0.8.3"
+cc = "1.0.83"
 
 [[bin]]
 name = "ocme-server"
@@ -25,12 +26,12 @@ path = "src/server.rs"
 test = false
 
 [[bin]]
-name = "ocme"
+name = "ocme-management"
 path = "src/management.rs"
 test = false
 
 [lib]
-name = "ocme_common"
+name = "ocme"
 path = "src/common.rs"
 test = true
 doctest = true
