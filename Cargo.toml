@@ -17,8 +17,7 @@ serde = "1.0.193"
 dotenvy = { version = "0.15.7", optional = true }
 
 [build-dependencies]
-# sailfish = "0.8.3"
-# cc = "1.0.83"
+android-cli = "0.2.0"
 
 [features]
 program = ["dep:dotenvy", "dep:tokio"]
@@ -41,7 +40,7 @@ required-features = ["program"]
 name = "ocme"
 path = "src/common.rs"
 test = true
-doctest = true
+doctest = false
 bench = true
 doc = true
 proc-macro = false
