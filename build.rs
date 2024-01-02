@@ -10,11 +10,9 @@ fn main() {
         let prof = env::var("PROFILE").unwrap_or("debug".to_string()).to_lowercase();
         prof == "release"
     };
-    let status = android::trigger_build(release).expect("Failed to build Android app");
-    if status.success() {
-        println!("Successfully built Android app");
-    } else {
+    if !android::trigger_build(release).expect("Failed to build Android app").success() {
         panic!("Failed to build Android app");
     }
+    println!("Successfully built Android app");
 }
 
