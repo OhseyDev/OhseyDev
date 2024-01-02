@@ -17,9 +17,6 @@ postgres-native-tls = { version = "0.5.0", optional = true }
 serde = "1.0.193"
 dotenvy = { version = "0.15.7", optional = true }
 
-[build-dependencies]
-android-cli = "0.2.0"
-
 [features]
 program = ["dep:dotenvy", "dep:tokio"]
 server = ["program", "dep:hyper"]

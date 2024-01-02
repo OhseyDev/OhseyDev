@@ -1,18 +1,33 @@
-extern crate android_cli as android;
-
-use std::env;
+use std::{str::from_utf8, env, process::Command};
 
 fn main() {
     let mut path = env::current_dir().expect("Failed to acquire working directory");
     path.push("android");
-    android::create_dot_android(path.as_path(), String::from("Android app"), String::from("me.ohsey.android"), None).expect("Unable to prepare for building of Android app");
-    let release = {
-        let prof = env::var("PROFILE").unwrap_or("debug".to_string()).to_lowercase();
-        prof == "release"
+    let output = if cfg!(target_os = "windows") {
+        Command::new("cmd")
+            .arg(path.as_os_str())
+            .arg(".\\gradlew.bat build")
+            .output().expect("Failed to build Android app")
+    } else {
+        path.push("gradlew");
+        Command::new("sh")
+            .arg("-c")
+            .arg(format!("{} build", path.display()))
+            .output().expect("Failed to build Android app")
     };
-    if !android::trigger_build(release).expect("Failed to build Android app").success() {
-        panic!("Failed to build Android app");
+    if output.status.success() {
+        let s = match from_utf8(&output.stderr) {
+            Ok(v) => v,
+            Err(e) => panic!("Unable to print stderr output of command: {}", e)
+        };
+        println!("{}", s);
+        println!("Successfully built Android app");
+    } else {
+        let s = match from_utf8(&output.stderr) {
+            Ok(v) => v,
+            Err(e) => panic!("Unable to print stderr output of command: {}", e)
+        };
+        println!("{}", s);
     }
-    println!("Successfully built Android app");
 }
 
