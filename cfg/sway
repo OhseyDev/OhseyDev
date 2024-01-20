@@ -80,7 +80,7 @@ bindsym $mod+r mode "resize"
 default_border none
 
 #
-# Status Bar:
+# Status Bar
 #
 
 bar {
@@ -89,10 +89,14 @@ bar {
     modifier none
     workspace_buttons no
     tray_output none
+    mode dock
+    wrap_scroll yes
+    gaps 1
     colors {
     	background #1c1f26
 	statusline #dadbe6
     }
+    font pango:SourceCodePro Medium 12
 }
 
 include /etc/sway/config.d/*
