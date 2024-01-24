@@ -65,6 +65,7 @@ curl
 dart
 dash
 dejagnu
+delve
 deno
 diesel-cli
 directx-headers
@@ -134,6 +135,7 @@ go-licenses
 go-tools
 godot
 gofumpt
+goreleaser
 gperf
 gradle
 greetd
@@ -182,6 +184,7 @@ lm32-elf-binutils
 lm32-elf-gcc
 lm32-elf-gdb
 lm32-elf-newlib
+lostfiles
 lua
 luajit
 make
@@ -207,6 +210,7 @@ mono-tools
 moosefs
 moreutils
 mpfr
+musl
 nasm
 ncrack
 ncurses
@@ -234,6 +238,7 @@ or1k-elf-newlib
 pass
 perl
 pipewire
+pkgfile
 polly
 python
 python-pip
@@ -345,6 +350,7 @@ rust-script
 rust-src
 rust-wasm
 rustscan
+rustup
 rustypaste
 rustypaste-cli
 shaderc
@@ -389,6 +395,7 @@ tinygo
 transmission-cli
 trash-cli
 udftools
+ufw
 unrar
 unzip
 vkd3d
