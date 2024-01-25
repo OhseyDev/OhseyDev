@@ -91,6 +91,7 @@ firefox-dark-reader
 fish
 fontforge
 freetype2
+freetype2-docs
 freeverb3
 fscrypt
 fuse3
@@ -174,8 +175,15 @@ libpipewire
 libreoffice-still
 libsass
 libssh
+libssh-docs
 libssh2
 libvert
+linux-docs
+linux-hardened-docs
+linux-lts-docs
+linux-rt-docs
+linux-rt-lts-docs
+linux-zen-docs
 lld
 lldb
 llvm
@@ -185,6 +193,7 @@ lm32-elf-gcc
 lm32-elf-gdb
 lm32-elf-newlib
 lostfiles
+lsp-plugins-docs
 lua
 luajit
 make
@@ -238,9 +247,12 @@ or1k-elf-newlib
 pass
 perl
 pipewire
+pipewire-docs
 pkgfile
 polly
+postgresql-docs
 python
+python-docs
 python-pip
 qemu-audio-pipewire
 qemu-base
@@ -344,6 +356,7 @@ rocm-opencl-runtime
 rocm-opencl-sdk
 rocm-smi-lib
 ruby
+ruby-docs
 rust
 rust-bindgen
 rust-script
@@ -403,6 +416,7 @@ vlc
 vulkan-extra-layers
 vulkan-extra-tools
 vulkan-headers
+vulkan-html-docs
 vulkan-tools
 vulkan-utility-libraries
 vulkan-validation-layers
