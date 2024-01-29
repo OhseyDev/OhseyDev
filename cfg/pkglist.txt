@@ -358,7 +358,9 @@ rocm-smi-lib
 ruby
 ruby-docs
 rust
+rust-analyzer
 rust-bindgen
+rust-musl
 rust-script
 rust-src
 rust-wasm
