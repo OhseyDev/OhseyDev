@@ -7,6 +7,17 @@ pub struct BasicPage {
     description: String,
     title: String,
     authors: Vec<String>,
-    tags: Vec<String>
+    tags: Vec<String>,
+    content: super::Content
 }
 
+#[derive(TemplateOnce)]
+#[template(path = "full.stpl")]
+pub struct FullPage {
+    site: super::SiteInfo,
+    description: String,
+    title: String,
+    authors: Vec<String>,
+    tags: Vec<String>,
+    content: super::Content
+}

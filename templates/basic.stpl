@@ -2,24 +2,14 @@
 <html lang="en_GB">
   <head>
     <% include!("metadata.stpl") %>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="assets/basic.css"
-      media="screen"
-    />
     <% include!("favicon.stpl") %>
-    <script type="application/javascript" src="assets/basic.js"></script>
+    <link rel="stylesheet" type="text/css" href="<%= site.branding.assets %>/basic.css" media="screen" />
+    <script type="application/javascript" src="<%= site.branding.assets %>/basic.js"></script>
   </head>
   <body>
     <% include!("themeswitch.stpl") %>
-    <main>
-      <h1>Oops! We don&#039;t have that here :(</h1>
-      <p>Try starting again at our home page!</p>
-    </main>
-    <footer>
-      <div></div>
-      <h5>&copy; Ohsey Media</h5>
-    </footer>
+    <header><% content.header %></header>
+    <main><% content.main %></main>
+    <footer><% content.footer %></footer>
   </body>
 </html>

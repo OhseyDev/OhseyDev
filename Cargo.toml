@@ -6,7 +6,8 @@ build = "build.rs"
 
 [dependencies]
 sailfish = "0.8.3"
-url = "2.5.0"
+html = { version = "0.6.3", optional = true }
+url = { version = "2.5.0", optional = true }
 sql-builder = "3.1.1"
 hyper = { version = "1.1.0", optional = true, features = ["http1", "http2", "server"] }
 tokio = { version = "1.35.1", optional = true, features = ["rt-multi-thread", "macros", "net", "sync"] }
@@ -22,7 +23,7 @@ dotenvy = { version = "0.15.7", optional = true }
 [features]
 program = ["dep:dotenvy", "dep:tokio"]
 server = ["program", "dep:hyper"]
-common = ["dep:tokio-postgres", "dep:postgres-types", "dep:postgres-native-tls", "dep:quinn"]
+common = ["dep:tokio-postgres", "dep:postgres-types", "dep:postgres-native-tls", "dep:quinn", "dep:html", "dep:url"]
 
 [[bin]]
 name = "ocme-server"

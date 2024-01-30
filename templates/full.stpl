@@ -3,18 +3,15 @@
   <head>
     <% include!("metadata.stpl") %>
     <% include!("favicon.stpl") %>
-    
-    <script type="application/javascript" src="assets/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="<%= site.branding.assets %>/full.css" media="screen" />
+    <script type="application/javascript" src="<%= site.branding.assets %>/index.js"></script>
   </head>
   <body>
     <% include!("themeswitch.stpl" %>
-    <object data="https://cdn.ohsey.me/images/logo.svg" type="image/svg+xml"></object>
+    <object data="<%= site.branding.assets %>/logo.svg" type="image/svg+xml"></object>
     <span class="spacer"></span>
-    <header>
-      <h2></h2>
-      <p></p>
-    </header>
-    <main></main>
-    <footer></footer>
+    <header><% content.header %></header>
+    <main><% content.main %></main>
+    <footer><% content.footer %></footer>
   </body>
 </html>
