@@ -1,19 +1,28 @@
-use std::{str::from_utf8, env, process::Command};
+use std::{
+    str::from_utf8,
+    env,
+    process::Command,
+    fs::File,
+    io::Write,
+    io::Result as IoResult
+};
 
-fn main() {
-    let mut path = env::current_dir().expect("Failed to acquire working directory");
+use uuid::Uuid;
+
+fn main() -> IoResult<()> {
+    let mut path = env::current_dir()?;
     path.push("android");
     let output = if cfg!(target_os = "windows") {
         Command::new("cmd")
             .arg(path.as_os_str())
             .arg(".\\gradlew.bat build")
-            .output().expect("Failed to build Android app")
+            .output()?//.expect("Failed to build Android app")
     } else {
         path.push("gradlew");
         Command::new("sh")
             .arg("-c")
             .arg(format!("{} build", path.display()))
-            .output().expect("Failed to build Android app")
+            .output()?//.expect("Failed to build Android app")
     };
     if output.status.success() {
         let s = match from_utf8(&output.stderr) {
@@ -29,5 +38,6 @@ fn main() {
         };
         println!("{}", s);
     }
+    Ok(())
 }
 
