@@ -5,22 +5,27 @@ pub mod templates;
 pub struct Branding {
     logo: Url,
     banner: Url,
-    icon: Url,
+    icon: Url
+}
+
+pub struct Assets {
     stylesheet: Url,
     script: Url,
     favicon: Url,
+    manifest: Url
 }
 
 pub struct SiteInfo {
     name: String,
     owner: String,
+    assets: Assets,
     branding: Branding,
-    manifest: Url,
+    index: Url
 }
 
 pub struct Content {
-    header: String,
-    main: String,
-    footer: String
+    header: html::content::Header,
+    main: html::content::Main,
+    footer: html::content::Footer
 }
 

@@ -1,7 +1,7 @@
-<link rel="apple-touch-icon" sizes="180x180" href="<%= site.branding.favicon %>/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="<%= site.branding.favicon %>/32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="<%= site.branding.favicon %>/16x16.png" />
-<link rel="icon" type="image/png" sizes="192x192" href="<%= site.branding.favicon %>/192x192.png" />
-<link rel="icon" type="image/png" sizes="512x512" href="<%= site.branding.favicon %>/512x512.png" />
-<link rel="manifest" href="<%= site.manifest %>" />
-<link rel="icon" type="image/x-icon" href="<%= site.branding.favicon %>" />
+<link rel="apple-touch-icon" sizes="180x180" href="<%= site.assets.favicon %>/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="<%= site.assets.favicon %>/32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="<%= site.assets.favicon %>/16x16.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="<%= site.assets.favicon %>/192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="<%= site.assets.favicon %>/512x512.png" />
+<link rel="manifest" href="<%= site.assets.manifest %>" />
+<link rel="icon" type="image/x-icon" href="<%= site.assets.favicon %>" />
