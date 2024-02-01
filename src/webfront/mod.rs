@@ -6,13 +6,16 @@ pub struct Branding {
     logo: Url,
     banner: Url,
     icon: Url,
-    assets: Url,
+    stylesheet: Url,
+    script: Url,
+    favicon: Url,
 }
 
 pub struct SiteInfo {
     name: String,
     owner: String,
     branding: Branding,
+    manifest: Url,
 }
 
 pub struct Content {

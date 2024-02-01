@@ -3,8 +3,8 @@
   <head>
     <% include!("metadata.stpl") %>
     <% include!("favicon.stpl") %>
-    <link rel="stylesheet" type="text/css" href="<%= site.branding.assets %>/basic.css" media="screen" />
-    <script type="application/javascript" src="<%= site.branding.assets %>/basic.js"></script>
+    <link rel="stylesheet" type="text/css" href="<%= site.branding.stylesheet %>" media="screen" />
+    <script type="application/javascript" src="<%= site.branding.script %>"></script>
   </head>
   <body>
     <% include!("themeswitch.stpl") %>
