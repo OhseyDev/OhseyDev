@@ -1,6 +1,3 @@
-// extern crate postgres;
-extern crate sailfish;
-extern crate serde;
-
-
+#[cfg(feature = "common")]
+pub mod webfront;
 

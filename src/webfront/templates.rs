@@ -32,3 +32,4 @@ pub struct BrandPage {
     tags: Vec<String>,
     content: super::Content
 }
+

@@ -1,4 +1,4 @@
-use url::Url;
+use url::{Url, ParseError};
 
 pub mod templates;
 
