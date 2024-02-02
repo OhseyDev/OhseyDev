@@ -12,6 +12,7 @@ avr-gcc
 avr-gdb
 avr-libc
 bash
+bc
 bcachefs-tools
 binutils
 boost
@@ -64,6 +65,7 @@ crosstool-ng
 curl
 dart
 dash
+debuginfod
 dejagnu
 delve
 deno
@@ -82,6 +84,7 @@ erofs-utils
 exfat-utils
 exfatprogs
 expat
+expect
 extra-cmake-modules
 f2fs-tools
 ffmpeg
@@ -151,7 +154,9 @@ gvfs-nfs
 gvfs-smb
 hwdetect
 ifuse
+inetutils
 inkscape
+jansson
 jdk-openjdk
 jdk17-openjdk
 jdk8-openjdk
@@ -178,6 +183,7 @@ libssh
 libssh-docs
 libssh2
 libvert
+libxml2
 linux-docs
 linux-hardened-docs
 linux-lts-docs
@@ -245,6 +251,7 @@ or1k-elf-gcc
 or1k-elf-gdb
 or1k-elf-newlib
 pass
+patch
 perl
 pipewire
 pipewire-docs
@@ -376,6 +383,7 @@ spirv-tools
 squashfs-tools
 stack
 sway
+tcl
 texinfo
 texlive-basic
 texlive-bibtexextra
