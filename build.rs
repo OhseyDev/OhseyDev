@@ -2,12 +2,8 @@ use std::{
     str::from_utf8,
     env,
     process::Command,
-    fs::File,
-    io::Write,
     io::Result as IoResult
 };
-
-use uuid::Uuid;
 
 fn main() -> IoResult<()> {
     let mut path = env::current_dir()?;

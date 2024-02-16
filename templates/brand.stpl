@@ -3,13 +3,13 @@
   <head>
     <% include!("metadata.stpl") %>
     <% include!("favicon.stpl") %>
-    <link rel="stylesheet" type="text/css" href="<%= site.branding.stylesheet %>" media="screen" />
-    <script type="application/javascript" src="<%= site.branding.script %>"></script>
+    <link rel="stylesheet" type="text/css" href="<%= site.branding().stylesheet() %>" media="screen" />
+    <script type="application/javascript" src="<%= site.branding().script() %>"></script>
   </head>
   <body id="full">
     <% include!("themeswitch.html") %>
     <% include!("logo.svg") %>
-    <%= brand.banner %>
+    <%= brand.banner() %>
     <% include!("topnav.stpl") %>
     <span class="spacer"></span>
     <header><% content.header %></header>

@@ -1,7 +1,7 @@
 <nav id="top">
   <ul>
-    <li><a href="<%= site.index %>/about">About</a></li>
-    <li><a href="<%= site.index %>/brands">Brands</a></li>
-    <li><a href="<%= site.index %>/opensource">FOSS</a></li>
+    <li><a href="<%= site.index() %>/about">About</a></li>
+    <li><a href="<%= site.index() %>/brands">Brands</a></li>
+    <li><a href="<%= site.index() %>/opensource">FOSS</a></li>
   </ul>
 </nav>
