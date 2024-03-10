@@ -58,7 +58,6 @@ cargo-ndk
 cargo-nextest
 cargo-outdated
 cargo-semver-checks
-cargo-show-asm
 cargo-shuttle
 cargo-sort
 cargo-spellcheck
@@ -91,7 +90,6 @@ ecryptfs-utils
 egl-wayland
 elfutils
 erofs-utils
-exfat-utils
 exfatprogs
 expat
 expect
@@ -147,7 +145,6 @@ glu
 gmp
 gnu-efi
 gnu-free-fonts
-go
 go-licenses
 go-tools
 godot
@@ -268,7 +265,7 @@ haskell-cairo
 haskell-call-stack
 haskell-casa-client
 haskell-casa-types
-haskell-casa-insensitive
+haskell-case-insensitive
 haskell-cassava
 haskell-cassava-megaparsec
 haskell-cborg
@@ -317,7 +314,7 @@ haskell-configfile
 haskell-configurator
 haskell-configurator-pg
 haskell-constraints
-haskell-constraints-extra
+haskell-constraints-extras
 haskell-containers-unicode-symbols
 haskell-contravariant
 haskell-contravariant-extras
@@ -407,11 +404,11 @@ haskell-dlist-instances
 haskell-dns
 haskell-doclayout
 haskell-docopt
-haskell-doctemplate
+haskell-doctemplates
 haskell-doctest
 haskell-doctest-discover
 haskell-doctest-driver-gen
-haskell-doctest-exitcode-gen
+haskell-doctest-exitcode-stdio
 haskell-doctest-lib
 haskell-doctest-parallel
 haskell-dotgen
@@ -670,15 +667,11 @@ jdk-openjdk
 jdk17-openjdk
 jdk8-openjdk
 jfsutils
-jre-openjdk
-jre17-openjdk
-jre8-openjdk
 julia
 kitty
 kitty-shell-integration
 kitty-terminfo
 kotlin
-kvm
 less
 libc++
 libclc
@@ -691,7 +684,7 @@ libsass
 libssh
 libssh-docs
 libssh2
-libvert
+libvirt
 libxml2
 linux-docs
 linux-hardened-docs
@@ -808,7 +801,7 @@ qemu-system-avr
 qemu-system-cris
 qemu-system-hppa
 qemu-system-hppa-firmware
-qemu-system-loongaarch64
+qemu-system-loongarch64
 qemu-system-m68k
 qemu-system-microblaze
 qemu-system-microblaze-firmware
@@ -842,7 +835,6 @@ qemu-ui-spice-core
 qemu-user
 qemu-user-binfmt
 qemu-user-static
-qemu-user-static-binfmt
 qemu-vhost-user-gpu
 readline
 rhythmbox
@@ -882,7 +874,6 @@ rust-script
 rust-src
 rust-wasm
 rustscan
-rustup
 rustypaste
 rustypaste-cli
 sed
@@ -948,10 +939,9 @@ wayland-docs
 wayland-protocols
 wayland-utils
 which
-wlgreet
 xfsdump
 xfsprogs
-xorg-wayland
+xorg-xwayland
 xz
 yasm
 zig

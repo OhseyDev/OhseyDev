@@ -84,6 +84,8 @@ default_border none
 #
 
 bar {
+    swaybar_command swaybar
+    status_command swaystatus
     position top
     binding_mode_indicator no
     modifier none
@@ -95,6 +97,10 @@ bar {
     colors {
     	background #1c1f26
 	statusline #dadbe6
+    }
+    tray {
+        tray_output none
+	icon_theme hicolor
     }
     font pango:SourceCodePro Medium 12
 }

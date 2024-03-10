@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # update arch repository packages
-pacman -Suy
+sudo pacman -Suy
 # update all installed aur packages
 paru -Sua
 # install/update ohmyposh
-curl -s https://ohmyposh.dev/install.sh | bash -s
+curl -s https://ohmyposh.dev/install.sh | sudo bash -s
 

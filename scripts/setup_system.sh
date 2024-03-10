@@ -1,13 +1,14 @@
 #!/bin/sh
 
 # Install packages
-pacman -S - < pkglist.txt
+sudo pacman -S - < pkglist.txt
 
 # Setup AUR helper
 mkdir /home/Downloads
 cd /home/Downloads
 git clone https://aur.archlinux.org/paru.git
 cd paru && makepkg -si && cd ..
+rm -R paru
 paru --gendb
 
 # Install AUR packages
@@ -124,5 +125,5 @@ paru ps3libraries
 
 # Install OhMyPosh
 
-curl -s https://ohmyposh.dev/install.sh | bash -s
+curl -s https://ohmyposh.dev/install.sh | sudo bash -s
 
