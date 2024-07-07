@@ -716,6 +716,7 @@ maxima-ecl
 maxima-fas
 maxima-sbcl
 meson
+mercurial
 mingw-w64-binutils
 mingw-w64-crt
 mingw-w64-gcc
