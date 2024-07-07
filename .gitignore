@@ -1,4 +1,2 @@
-*.d
-*.rlib
-*.bin
-target/
+csdsa/rust/Cargo.lock
+csdsa/rust/target/
