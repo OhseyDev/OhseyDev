@@ -1,0 +1,13 @@
+{
+	"order": ["brightness", "volume", "network_interface", "load", "battery"],
+	"load": {"format": "1m {loadavg_1m} kthreads:{running_kthreads_cnt}/{total_kthreads_cnt} {last_created_process_pid}"},
+	"brightness": {"format": "{brightness}"},
+	"volume": {"format": "Volume: {volume}%"},
+	"network_interface": {
+		"format": "{is_connected:{per_interface_fmt_str:{name} {ipv4_addrs:1} {ipv6_addrs:1}}}",
+		"short_format": "{is_connected:{per_interface_fmt_str:{name}}}",
+		"update_interval": 20
+	},
+	"battery": {"format": "{has_battery:{per_battery_fmt_str:{is_full:Battery is Full}{is_charging:Charging {capacity}%}{is_discharging:Discharging {capacity}%}}}"},
+
+}

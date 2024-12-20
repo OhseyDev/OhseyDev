@@ -8,14 +8,48 @@ set $right l
 set $term kitty 
 set $menu fuzzel
 
+# remove titlebar
+
+for_window [title="^.*"] title_format ""
+default_border normal 0
+default_floating_border normal 0
+
+# workspaces
+
+set $terminal "1: terminal"
+set $schedule "2: schedule"
+set $workspace "3: workspace"
+set $web "4: web"
+set $comms "5: communication"
+
+assign [app_id="kitty"] workspace $terminal
+assign [class="firefox" instance="Navigator"] workspace $web
+assign [app_id="firefox"] workspace $web
+assign [app_id="libreoffice"] workspace $workspace
+assign [app_id="org.inkscape.Inkscape"] workspace $workspace
+assign [app_id="blender"] workspace $workspace
+assign [app_id="Gimp*"] workspace $workspace
+assign [class="discord"] workspace $comms
+assign [app_id="thunderbird"] workspace $schedule
+assign [app_id="zed"] workspace $workspace
+
+bindsym $mod+1 workspace $terminal
+bindsym $mod+2 workspace $schedule
+bindsym $mod+3 workspace $workspace
+bindsym $mod+4 workspace $web
+bindsym $mod+5 workspace $comms
+
+workspace_auto_back_and_forth yes
+
+# make sure X windows work
 xwayland enable
 
 ### Input/Output
 
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg /media/DraculaPro/wallpapers/dracula-pro/desktop-2560x1600.png center
 
 input "type:keyboard" {
-	xkb_layout gb
+	xkb_layout us
 }
 
 input "type:mouse" {
@@ -84,23 +118,19 @@ default_border none
 #
 
 bar {
-    swaybar_command swaybar
-    status_command swaystatus
     position top
-    binding_mode_indicator no
+    binding_mode_indicator yes
     modifier none
     workspace_buttons no
     tray_output none
     mode dock
+    status_command swaystatus /etc/sway/status
     wrap_scroll yes
-    gaps 1
+	hidden_state hide
+    gaps 0
     colors {
-    	background #1c1f26
-	statusline #dadbe6
-    }
-    tray {
-        tray_output none
-	icon_theme hicolor
+    	background #22212cff
+		statusline #454158ff
     }
     font pango:SourceCodePro Medium 12
 }
